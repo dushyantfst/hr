@@ -1,0 +1,15 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=mongodb.masternode.com;port=3306;dbname=orangehrm_mysql'
+      username: root
+      password: root
+      attributes: { export: tables }
+test:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=mongodb.masternode.com;port=3306;dbname=test_orangehrm_mysql'
+      username: root
+      password: root

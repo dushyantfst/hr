@@ -1,0 +1,35 @@
+[07-Mar-2017 19:25:37 Europe/Zurich] Empty module and/or action after parsing the URL "/webres_57eb84702e3066.16112222/orangehrmAdminPlugin/css/viewEducationSuccess.css" (/).
+[07-Mar-2017 19:25:51 Europe/Zurich] Empty module and/or action after parsing the URL "/webres_57eb84702e3066.16112222/orangehrmAdminPlugin/css/viewEducationSuccess.css" (/).
+[07-Mar-2017 19:26:12 Europe/Zurich] Empty module and/or action after parsing the URL "/webres_57eb84702e3066.16112222/orangehrmAdminPlugin/css/viewEducationSuccess.css" (/).
+[07-Mar-2017 19:26:22 Europe/Zurich] Empty module and/or action after parsing the URL "/webres_57eb84702e3066.16112222/orangehrmAdminPlugin/css/viewEducationSuccess.css" (/).
+Tue Mar  7 19:40:06 2017,820 [54686] ERROR filter.ExceptionCatcherFilter - Uncaught Exception: exception 'LeaveServiceException' with message 'Invalid value passed for month in LeavePeriodService::getListOfDates()' in /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/plugins/orangehrmLeavePlugin/lib/service/LeavePeriodService.php:135
+Stack trace:
+#0 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/plugins/orangehrmLeavePlugin/modules/leave/actions/loadDatesforMonthAction.class.php(35): LeavePeriodService->getListOfDates(0, false)
+#1 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(952): loadDatesforMonthAction->execute(Object(sfWebRequest))
+#2 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmExecutionFilter.php(42): sfExecutionFilter->executeAction(Object(loadDatesforMonthAction))
+#3 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(947): orangehrmExecutionFilter->executeAction(Object(loadDatesforMonthAction))
+#4 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(933): sfExecutionFilter->handleAction(Object(sfFilterChain), Object(loadDatesforMonthAction))
+#5 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfExecutionFilter->execute(Object(sfFilterChain))
+#6 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/lib/vendor/symfony/lib/filter/sfCommonFilter.class.php(29): sfFilterChain->execute()
+#7 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfCommonFilter->execute(Object(sfFilterChain))
+#8 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/plugins/orangehrmCorePlugin/lib/filter/orangehrmPostExecutionFilter.php(22): sfFilterChain->execute()
+#9 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): orangehrmPostExecutionFilter->execute(Object(sfFilterChain))
+#10 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/apps/orangehrm/lib/filter/ModuleFilter.php(56): sfFilterChain->execute()
+#11 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ModuleFilter->execute(Object(sfFilterChain))
+#12 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/plugins/orangehrmCorePlugin/lib/authorization/filter/ohrmAuthorizationFilter.php(101): sfFilterChain->execute()
+#13 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ohrmAuthorizationFilter->execute(Object(sfFilterChain))
+#14 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/apps/orangehrm/lib/filter/SessionInfoFetcherFilter.php(67): sfFilterChain->execute()
+#15 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): SessionInfoFetcherFilter->execute(Object(sfFilterChain))
+#16 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/apps/orangehrm/lib/filter/OrangeI18NFilter.php(58): sfFilterChain->execute()
+#17 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): OrangeI18NFilter->execute(Object(sfFilterChain))
+#18 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/apps/orangehrm/lib/filter/ExceptionCatcherFilter.php(26): sfFilterChain->execute()
+#19 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): ExceptionCatcherFilter->execute(Object(sfFilterChain))
+#20 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/lib/vendor/symfony/lib/filter/sfBasicSecurityFilter.class.php(72): sfFilterChain->execute()
+#21 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfBasicSecurityFilter->execute(Object(sfFilterChain))
+#22 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(995): sfFilterChain->execute()
+#23 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(1031): sfRenderingFilter->execute(Object(sfFilterChain))
+#24 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(665): sfFilterChain->execute()
+#25 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/cache/orangehrm/prod/config/config_core_compile.yml.php(2352): sfController->forward('leave', 'loadDatesforMon...')
+#26 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/lib/vendor/symfony/lib/util/sfContext.class.php(170): sfFrontWebController->dispatch()
+#27 /Volumes/MyMac/development/hrms.arctoplabs/www/symfony/web/index.php(22): sfContext->dispatch()
+#28 {main}
